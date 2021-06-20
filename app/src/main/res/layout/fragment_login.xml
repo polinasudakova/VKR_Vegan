@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_phone_layout"
+            style="@style/Widget.Design.TextInputLayout.Auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Телефон"
+                android:inputType="phone"
+                android:text="+375298203794" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_sms_code_layout"
+            style="@style/Widget.Design.TextInputLayout.Auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_sms_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Код"
+                android:inputType="number|numberDecimal"
+                android:text="111111" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/TextAppearance.AppCompat.Button.Button.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="Войти" />
+
+        <Button
+            android:id="@+id/login_button_to_registration"
+            style="@style/TextAppearance.AppCompat.Button.Button.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Зарегистроваться" />
+
+        <Button
+            android:id="@+id/login_send_sms_code"
+            style="@style/TextAppearance.AppCompat.Button.Button.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="Проверить код" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/login_progress"
+        layout="@layout/view_fullscreen_progressbar"
+        tools:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_recipe_description"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="4dp"
+    android:text="1) Чистим яблоки от кожуры и семечек, режем на маленькие кусочки. Кусочки складываем в сотейник, добавляем пару ст ложек воды и ставить на небольшой огонь. Периодически помешиваем. Яблоки нужно греть до тех пор, пока они не станут совсем мягкими и не выпарится влага. Готовое пюре пробиваем блендером и остужаем."
+    android:textColor="@color/black"
+    android:textSize="@dimen/text_size_body" />

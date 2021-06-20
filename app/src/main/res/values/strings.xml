@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vegan</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="refrigerator_description">Здесь вы храните продукты, которые мы готовы помочь вам приготовить</string>
+    <string name="stoplist_description">Чтобы рекомендации работали лучше, мы должны узнать ваши предпочтения</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="4dp">
+
+
+    <TextView
+        android:id="@+id/item_ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Например"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_body" />
+
+    <ImageView
+        android:id="@+id/item_ingredient_line"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:layerType="software"
+        android:paddingHorizontal="8dp"
+        android:src="@drawable/dotted_line" />
+
+    <TextView
+        android:id="@+id/item_ingredient_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:maxWidth="160dp"
+        android:text="Например d d  ad a a da da da da da da"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_body" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.vegan.ui.registration.RegistrationFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_registration">
+
+        <action
+            android:id="@+id/open_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.vegan.ui.login.LoginFragment"
+        android:label="Логин"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/open_registration"
+            app:destination="@id/registration" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.vegan.ui.splash.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/view_fullscreen_progressbar">
+
+        <action
+            android:id="@+id/open_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/mobile_navigation" />
+
+    </fragment>
+
+</navigation>

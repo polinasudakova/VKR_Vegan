@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/AppBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/product_toolbar"
+            style="@style/ToolbarStyle.Navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Холодильник" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/refrigerator_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:text="@string/refrigerator_description"
+                android:textSize="@dimen/text_size_body" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingBottom="16dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="12"
+                tools:listitem="@layout/item_product" />
+
+            <Button
+                android:id="@+id/product_save"
+                style="@style/TextAppearance.AppCompat.Button.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сохранить" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/product_progress"
+        layout="@layout/view_fullscreen_progressbar"
+        tools:visibility="gone" />
+</LinearLayout>
+

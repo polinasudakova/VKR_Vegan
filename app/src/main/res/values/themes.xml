@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Vegan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextAppearance.AppCompat.ToolbarTitle">
+        <item name="android:textSize">@dimen/text_size_title</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="titleTextColor">?colorOnPrimary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.AppCompat.ToolbarTitle</item>
+    </style>
+
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Style">
+        <item name="android:textSize">@dimen/text_size_headline2</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Collapsed">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="ToolbarStyle.Navigation">
+        <item name="navigationIcon">@drawable/ic_arrow</item>
+    </style>
+
+    <style name="AppBarStyle"></style>
+
+    <style name="TextAppearance.AppCompat.Button.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Button.Button.Rounded">
+        <item name="android:background">@drawable/button_background_rounded</item>
+    </style>
+
+    <style name="Widget.Design.TextInputLayout.Auth">
+        <item name="android:background">@drawable/background_input</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+    </style>
+</resources>
